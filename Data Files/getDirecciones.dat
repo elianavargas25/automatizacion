@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description></description>
+   <name>getDirecciones</name>
+   <tag></tag>
+   <containsHeaders>true</containsHeaders>
+   <csvSeperator></csvSeperator>
+   <dataFileGUID>f621eb37-c987-4ff9-8af5-45b267359ff0</dataFileGUID>
+   <dataSourceUrl></dataSourceUrl>
+   <driver>DBData</driver>
+   <isInternalPath>false</isInternalPath>
+   <password></password>
+   <query>SELECT   tp.ID_DEPARTAMENTO, md.ID_CIUDAD, md.ID_VIA, md.NUMERO_VIA, md.PRIMER_NUMERO, CASE WHEN  md.ENVIO_INFORMACION = 'S' THEN 0 ELSE 1 END AS AUTORIZA, CASE WHEN md.ACTIVO = 'S' THEN 0 ELSE 1 END as ACTIVO, md.COMPLEMENTO_DIRECCION , md.id_direccion FROM CORE_MEDELLIN.MAESTRO_DIRECCION md inner join CORE_MEDELLIN.TIPO_CIUDAD tp on tp.ID_CIUDAD = md.ID_CIUDAD
+where ID_VIA is not null and NUMERO_VIA is not null and md.ACTIVO is not null AND md.ENVIO_INFORMACION IS NOT NULL and  rownum &lt; 100
+ /*AND MOD(md.ID_DIRECCION,ROUND( DBMS_Random.Value(100,999),0) ) &lt;100*/</query>
+   <secureUserAccount>false</secureUserAccount>
+   <sheetName></sheetName>
+   <user></user>
+   <usingGlobalDBSetting>true</usingGlobalDBSetting>
+</DataFileEntity>

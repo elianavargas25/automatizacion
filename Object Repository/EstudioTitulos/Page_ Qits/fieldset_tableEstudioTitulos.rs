@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>fieldset_tableEstudioTitulos</name>
+   <tag></tag>
+   <elementGuidId>93c32dc0-4046-4ae7-b42e-12d3d49b3cc5</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;formInvestigacionControl:tableEstudioTitulos&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;formInvestigacionControl:tableEstudioTitulos&quot;]</value>
+   </webElementProperties>
+</WebElementEntity>
