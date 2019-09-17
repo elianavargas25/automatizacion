@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description></description>
+   <name>getPersona</name>
+   <tag></tag>
+   <containsHeaders>true</containsHeaders>
+   <csvSeperator></csvSeperator>
+   <dataFileGUID>9f86912b-8994-407a-b47a-8c6c402617d7</dataFileGUID>
+   <dataSourceUrl>jdbc:oracle:thin:@//10.125.60.200:1521/DEVQITSMED</dataSourceUrl>
+   <driver>DBData</driver>
+   <isInternalPath>false</isInternalPath>
+   <password>b3JhY2xl</password>
+   <query>SELECT DISTINCT  PI.ID_DOCUMENTO_IDENTIDAD, PI.NUMERO_DOCUMENTO, MB.IDENTIFICADOR_BIEN
+FROM CORE_MEDELLIN.PERSONA_IDENTIFICACION PI 
+INNER JOIN COBRO_MEDELLIN.CARTERA_DEUDOR CD ON PI.ID_PERSONA = CD.ID_PERSONA
+INNER JOIN COBRO_MEDELLIN.CARTERA_PROCESO CP ON CP.ID_CARTERA = CD.ID_CARTERA
+INNER JOIN COBRO_MEDELLIN.INVESTIGACION_BIEN IB ON IB.ID_PERSONA = CD.ID_PERSONA
+INNER JOIN COBRO_MEDELLIN.MAESTRO_BIENES MB ON MB.ID_BIEN = IB.ID_BIEN
+WHERE CP.ID_PROCESO_CARTERA = 3 AND CP.ID_ESTADO_CARTERA = 32 AND CP.ACTIVO = 'S' AND ROWNUM &lt;10</query>
+   <secureUserAccount>true</secureUserAccount>
+   <sheetName></sheetName>
+   <user>system</user>
+   <usingGlobalDBSetting>false</usingGlobalDBSetting>
+</DataFileEntity>

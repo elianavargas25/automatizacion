@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_cantidadExpediente</name>
+   <tag></tag>
+   <elementGuidId>3e0df70c-804f-4a4c-b1b3-c22c9bacebe3</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;formDetalleRevisionExpediente:idPanelDatosGenerales_content&quot;]/table[2]/tbody/tr[1]/td[2]/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;formDetalleRevisionExpediente:idPanelDatosGenerales_content&quot;]/table[2]/tbody/tr[1]/td[2]/span</value>
+   </webElementProperties>
+</WebElementEntity>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>estudioTitulos</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bd3982c7-be7b-4460-8bbc-85588fce8baf</testCaseGuid>
+   <variable>
+      <defaultValue>findTestData('getPersona').getValue(1, 1)</defaultValue>
+      <description></description>
+      <id>f0d43f7f-7a74-4e05-993d-346e46fd27d7</id>
+      <masked>false</masked>
+      <name>TIPO_DOCUMENTO</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('getPersona').getValue(2, 1)</defaultValue>
+      <description></description>
+      <id>7b8072f6-e7ab-4102-9352-03269ef006e0</id>
+      <masked>false</masked>
+      <name>NRO_DOCUMENTO</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('getPersona').getValue(3, 1)</defaultValue>
+      <description></description>
+      <id>73ab8a9d-d978-4ddc-a881-2ce6426af6df</id>
+      <masked>false</masked>
+      <name>IDENTIFICADOR_BIEN</name>
+   </variable>
+</TestCaseEntity>
